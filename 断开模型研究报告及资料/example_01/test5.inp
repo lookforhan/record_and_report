@@ -1,0 +1,143 @@
+[TITLE]
+
+[JUNCTIONS]
+ J2                                    0.0000
+ J3                                    2.0000
+ E1-P2                                 0.6000
+ E2-P2                                 0.6000
+
+[RESERVOIRS]
+ R1                                    2.2000 
+
+[TANKS]
+
+[PIPES]
+ P1                              R1                              J2                                 2000.0000    1200.0000     100.0000       0.0000 
+ P2                              J2                              J3                                 2000.0000    1200.0000     100.0000       0.0000 CLOSED
+ P1-P2                           J2                              E1-P2                               600.0000    1200.0000     100.0000       0.0000 
+ P2-P2                           J3                              E2-P2                              1400.0000    1200.0000     100.0000       0.0000 
+
+[PUMPS]
+
+[VALVES]
+
+[DEMANDS]
+ J2                                   50.000000    1
+ J3                                   10.000000    2
+ E1-P2                                 0.000000 
+ E2-P2                                 0.000000 
+
+[EMITTERS]
+ E1-P2                              3004.091309
+ E2-P2                              3004.091309
+
+[STATUS]
+ P2                              closed
+
+[PATTERNS]
+ 1                                     1.0000       2.0000       3.0000       4.0000       5.0000       6.0000
+ 1                                     7.0000       8.0000      11.0000      11.0000      11.0000      12.0000
+ 2                                     1.0000       1.0000       1.0000       0.0000       0.0000       0.0000
+ 2                                     0.0000       0.0000       0.0000       0.0000       0.0000       0.0000
+
+[CURVES]
+
+[CONTROLS]
+
+[QUALITY]
+
+[SOURCES]
+
+[MIXING]
+
+[REACTIONS]
+ ORDER  BULK            1.00
+ ORDER  WALL            1
+ ORDER  TANK            1.00
+ GLOBAL BULK            0.000000
+ GLOBAL WALL            0.000000
+
+[ENERGY]
+ GLOBAL EFFIC        75.0000
+ DEMAND CHARGE       0.0000
+
+[TIMES]
+ DURATION            12:00:00
+ HYDRAULIC TIMESTEP  1:00:00
+ QUALITY TIMESTEP    0:05:00
+ REPORT TIMESTEP     1:00:00
+ REPORT START        0:00:00
+ PATTERN TIMESTEP    1:00:00
+ PATTERN START       0:00:00
+ RULE TIMESTEP       0:06:00
+ START CLOCKTIME     0:00:00
+ STATISTIC           NONE
+
+[OPTIONS]
+ UNITS               LPS
+ PRESSURE            METERS
+ HEADLOSS            H-W
+ PATTERN             1
+ UNBALANCED          CONTINUE 10
+ QUALITY             NONE
+ DEMAND MULTIPLIER   1.0000
+ EMITTER EXPONENT    0.5000
+ VISCOSITY           1.000000
+ DIFFUSIVITY         1.000000
+ SPECIFIC GRAVITY    1.000000
+ TRIALS              40
+ ACCURACY            0.00100000
+ TOLERANCE           0.01000000
+ CHECKFREQ           2
+ MAXCHECK            10
+ DAMPLIMIT           0.00000000
+
+[REPORT]
+ PAGESIZE            0
+ STATUS              NO
+ SUMMARY             NO
+ ENERGY              NO
+ MESSAGES            YES
+ NODES               NONE
+ LINKS               NONE
+ Elevation           NO
+ Demand              PRECISION 2
+ Head                PRECISION 2
+ Pressure            PRECISION 2
+ Quality             NO
+ Length              NO
+ Diameter            NO
+ Flow                PRECISION 2
+ Velocity            PRECISION 2
+ Headloss            PRECISION 2
+ Quality             NO
+ State               NO
+ Setting             NO
+ Reaction            NO
+
+
+
+[COORDINATES]
+ J2                                 3000.000000    6500.000000
+ J3                                 6000.000000    6500.000000
+ E1-P2                              3900.000000    6500.000000
+ E2-P2                              3900.000000    6500.000000
+ R1                                 1000.000000    6500.000000
+
+[TAGS]
+
+[VERTICES]
+;Link            	X-Coord         	Y-Coord
+
+[LABELS]
+;X-Coord           Y-Coord          Label & Anchor Node
+
+[BACKDROP]
+ DIMENSIONS     	0.00            	0.00            	10000.00        	10000.00        
+ UNITS          	None
+ FILE           	
+ OFFSET         	0.00            	0.00            
+
+
+
+[END]
